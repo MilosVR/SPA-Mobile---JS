@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="filtering.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="gallery">
+
+    <div class="header_title">
+        <div class="logo">
+            <img src="/assets/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <li class="logo_link active"><a href="/">Home</a></li>
+            <li class="logo_link"><a href="/about.html">About</a></li>
+            <li class="logo_link"><a href="/contact.html">Contact</a></li>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_collapse">
+        <li class="logo_link active">
+            <img src="/assets/home.png" alt="">
+            <a href="/">Home</a>
+        </li>
+        <li class="logo_link">
+            <img src="/assets/about.png" alt="">
+            <a href="/about.html">About</a>
+        </li>
+        <li class="logo_link">
+            <img src="/assets/contact.png" alt="">
+            <a href="/contact.html">Contact</a>
+        </li>
+    </div>
+    <div class="header_bar">
+        <div class="carousel">
+            <div class="arrow_wrapper_right">
+                <div class="left_arrow"></div>
+            </div>
+               <ul class="carousel_collection">
+                   <li class="carousel_item current_slide">
+                       <img src="/assets/iphone5.png" alt="">
+                       <span>Iphone 5</span>
+                       <span>Price:<span class="dollar">450$</span></span>
+                       <div class="tooltip_carousel">Iphone 5</div>
+                    </li>
+                   <li class="carousel_item">
+                       <img src="/assets/lgg6.png" alt="">
+                       <span>LG G6</span>
+                       <span>Price:<span class="dollar">356$</span> </span>
+                       <div class="tooltip_carousel">LG G6</div>
+                    </li>
+                   <li class="carousel_item">
+                       <img src="/assets/lgg7.png" alt="">
+                       <span>LG G7</span>
+                       <span>Price:<span class="dollar">385$</span> </span>
+                       <div class="tooltip_carousel">LG G7</div>
+                    </li>
+                   <li class="carousel_item">
+                       <img src="/assets/mate10.png" alt="">
+                       <span>Huawei Mate 10</span>
+                       <span>Price:<span class="dollar">420$</span> </span>
+                       <div class="tooltip_carousel">Huawei Mate 10</div>
+                    </li>
+                   <li class="carousel_item">
+                       <img src="/assets/mate8.png" alt="">
+                       <span>Huawei Mate 8</span>
+                       <span>Price:<span class="dollar">250$</span> </span>
+                       <div class="tooltip_carousel">Huawei Mate 8</div>
+                    </li>
+                   <li class="carousel_item">
+                       <img src="/assets/samsungEdge.png" alt="">
+                       <span>Samsung Edge</span>
+                       <span>Price:<span class="dollar">378$</span> </span>
+                       <div class="tooltip_carousel">Samsung S6 Edge</div>
+                    </li>
+                   <li class="carousel_item">
+                       <img src="/assets/samsungPrime.png" alt="">
+                       <span>Samsung Prime</span>
+                       <span>Price:<span class="dollar">189$</span> </span>
+                       <div class="tooltip_carousel">Samsung Prime</div>
+                    </li> 
+               </ul>
+        <div class="arrow_wrapper_left">       
+            <div class="right_arrow"></div> 
+        </div>      
+        </div>
+    </div>
+
+<!-- Filter Section -->
+
+    <div class="filter_section">
+        <form autocomplete="off" class="filter_section_form">
+            <div class="search_input_wraper">
+                <label for="search">Search</label>
+                <input class="search_input" 
+                name="search" 
+                type="text" 
+                placeholder="Search products...">
+                <button type="submit">Submit</button>
+                <div class="autocomplete_products">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="select_wraper">
+                <select>
+                    <option value="" selected disabled>Select model</option>
+                    <option value="All">All</option>
+                    <option value="Samsung"><span>Samsung</span></option>
+                    <option value="Sony">Sony</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="LG">LG</option>
+                 </select> 
+            </div> 
+
+        </form> 
+
+        <div class="product">
+            <div class="product_circle">
+                <img src="/assets/mate8.png" alt="">
+                <div class="product_circle_description">
+                    <h6>Huawei Mate 8</h6>
+                    <p>Released 2015, November
+                    185g, 7.9mm thickness
+                    Android 6.0, up to 7.0; EMUI 4
+                    32GB storage, microSD card slot <br/>
+                    <span>Price : <span class="price">450</span> $</span>
+                    </p>
+                     <button>Read more</button>
+                </div>
+            </div>
+            <div class="product_circle">
+                <img src="/assets/lgg6.png" alt="">
+                <div class="product_circle_description">
+                    <h6>LG G6</h6>
+                    <p>Released 2017, March
+                    163g, 7.9mm thickness
+                    Android 8.0; LG UX 6 UI
+                    32/64/128GB storage, microSD card slot <br/>
+                    <span>Price : <span class="price">356</span> $</span>
+                    </p>
+                     <button>Read more</button>
+                </div>
+            </div>
+            <div class="product_circle">
+                <img src="/assets/mate10.png" alt="">
+                <div class="product_circle_description">
+                    <h6>Huawei Mate 10</h6>
+                    <p>Released 2017, November
+                    178g, 7.9mm thickness
+                    Android 8.0, up to Android 9.0; EMUI 8
+                    128GB storage <br/>
+                    <span>Price : <span class="price">420</span> $</span>
+                    </p>
+                     <button>Read more</button>
+                </div>
+            </div>
+            <div class="product_circle">
+                <img src="/assets/samsungEdge.png" alt="">
+                <div class="product_circle_description">
+                    <h6>Samsung S6 Edge</h6>
+                    <p>Released 2015, April
+                    132g, 7mm thickness
+                    Android 7.0; TouchWiz UI
+                    32/64/128GB storage, no card slot <br/>
+                    <span>Price :<span class="price">378</span> $</span>
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="product_circle">
+                <img src="/assets/xperia.png" alt="">
+                <div class="product_circle_description">
+                    <h6>Sony Xperia</h6>
+                    <p>Released 2015, April
+                    132g, 7mm thickness
+                    Android 7.0; TouchWiz UI
+                    32/64/128GB storage, no card slot <br/>
+                    <span>Price :<span class="price">378</span> $</span>
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="product_circle">
+                <img src="/assets/xperiaXZ2.png" alt="">
+                <div class="product_circle_description">
+                    <h6>Sony Xperia XZ2</h6>
+                    <p>Released 2015, April
+                    132g, 7mm thickness
+                    Android 7.0; TouchWiz UI
+                    32/64/128GB storage, no card slot <br/>
+                    <span>Price :<span class="price">378</span> $</span>
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="product_circle">
+                <img src="/assets/samsungPrime.png" alt="">
+                <div class="product_circle_description">
+                    <h6>Samsung Prime</h6>
+                    <p>Released 2015, April
+                    132g, 7mm thickness
+                    Android 7.0; TouchWiz UI
+                    32/64/128GB storage, no card slot <br/>
+                    <span>Price :<span class="price">378</span> $</span>
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="product_circle">
+                <img src="/assets/lgg7.png" alt="">
+                <div class="product_circle_description">
+                    <h6>LG G7</h6>
+                    <p>Released 2015, April
+                    132g, 7mm thickness
+                    Android 7.0; TouchWiz UI
+                    32/64/128GB storage, no card slot <br/>
+                    <span>Price :<span class="price">378</span> $</span>
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+                
+    </div>
+
+    <div class="samsung_logo">
+            <img src="/assets/samsungLogo.png" alt="">
+        </div>
+    <div class="header_description">
+        <p>Get a Galaxy S10e starting from $450 with eligible trade-in 0</p>
+    </div>
+    <div class="phone_details">
+        <div class="first_box">
+            <div class="phone_details_image">
+                <img src="/assets/s10front.png" alt="">
+            </div>
+            <div class="phone_details_image">
+                <img src="/assets/s10back.png" alt="">
+            </div>
+            <div class="phone_details_image">
+                <img src="/assets/s10profile.png" alt="">
+            </div>
+        </div>
+        <div class="second_box">
+            <img src="/assets/s10front.png" alt="">
+        </div>
+        <div class="third_box">
+            <h4>Specification for <span>Galaxy S10</span></h4>
+            <div class="circle_image_wraper">
+                <div class="circle_cimage"></div>
+                <p>For a limited time only, on Samsung.com/Shop Samsung App, pre-order or purchase a new qualifying Galaxy device (“Qualifying Purchase”), send in your qualifying trade-in device to Samsung through the Samsung Trade-In Program, and if Samsung determines your trade-in device meets all eligibility requirements, you will receive a trade-in credit specific to your qualifying trade-in device to apply toward your Qualifying Purchase. Device models that currently qualify for trade-in and trade-in credit amounts associated with those models are available on Samsung.com and the Shop Samsung App; eligible models and amounts may change at Samsung’s sole discretion. </p>
+            </div>
+        </div>
+        <div class="modal_overlay"></div>
+    <div class="modal_window">
+        <span class="close_modal">&times;</span>
+    </div>
+    </div>
+
+    <div class='stars_raitng'>
+        <p>Rating</p>
+        <div class="star_outer">
+            <div class="star_inner"></div>
+        </div>
+        <form class="form_select">
+        <input type="number" step="0.1" max="5" min="0"
+            class="select_input" placeholder="Rate 1-5">
+        <button>Go!</button>
+        </form>
+    </div>  
+
+    <div class="general_specification">
+       
+        <div class="general_information_title">GENERAL INFORMATION</div>
+        <div class="general_information">
+            <div class="specification_title">
+                <p>Model Name</p>
+                <p>Model Number</p>
+                <p>Model Type</p>
+                <p>Color</p>
+                <p>Announced</p>
+                <p>Relased</p>
+            </div>
+            <div class="specification">
+                <p>Galaxy S10 Plus</p>
+                <p>SM-G975F</p>
+                <p>Phone</p>
+                <p>Luxurious Ceramic Black, Luxurious Ceramic White</p>
+                <p>2019,February</p>
+                <p>2019,March</p>
+                </div>
+            </div>
+            <div class="general_information_title">OPERATING SYSTEM
+                <div class="operating_system">
+                    <p >Operating System</p>
+                    <p >Android 9.0 (Pie)</p>
+                </div>
+            </div>        
+</div>  
+
+<div class="footer">
+    <div class='newsletter'>
+        <form class="newsletter_form">
+            <span>Subscribe for top stories, new launches & expert reviews!</span>
+            <input type="text" class="newsletter_input" placeholder="Enter your email">
+        </form>
+        <div class="footer_logo">
+            <img src="/assets/logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer_new_phone">
+        <h6>New Mobile Phones</h6>
+
+        <div class="footer_new_phone_models">
+        <div class="new_phone_models_description">
+        <p>Huawei Y9B Prime 2019</p> 
+        <p>Huawei Mate 30 ProMoto</p> 
+        </div>    
+        <div class="new_phone_models_description">
+        <p>Z4 ForceRealme X Pro</p>
+        <p>Iphone 8</p>
+        </div>
+        <div class="new_phone_models_description">
+        <p>Realme XRealme 3</p>
+        <p>Moto E6Apple I</p>
+        </div>
+        <div class="new_phone_models_description">
+        <p>Phone XI MaxLava A3</p>
+        <p>Realme 3 Pro 6G</p>
+        </div>
+        </div>
+    </div>
+    <div class="footer_navigation">
+        <div class="footer_navigation_links">
+            <div class="footer_navigation_link">Home</div>
+            <div class="footer_navigation_link">Privacy</div>
+            <div class="footer_navigation_link">About Us</div>
+            <div class="footer_navigation_link">Contact Us</div>
+            <div class="footer_navigation_link">Terms & Conditions</div>
+            <div class="footer_navigation_link">Feedback</div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script src="filtering.js"></script>
+</body>
+</html>
