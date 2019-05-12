@@ -101,20 +101,8 @@
 <!-- Filter Section -->
 
     <div class="filter_section">
-        <form autocomplete="off" class="filter_section_form">
-            <div class="search_input_wraper">
-                <label for="search">Search</label>
-                <input class="search_input" 
-                name="search" 
-                type="text" 
-                placeholder="Search products...">
-                <button type="submit">Submit</button>
-                <div class="autocomplete_products">
-                    <ul>
-                        
-                    </ul>
-                </div>
-            </div>
+        <div  class="filter_section_form">
+
             <div class="select_wraper">
                 <select>
                     <option value="" selected disabled>Select model</option>
@@ -126,7 +114,45 @@
                  </select> 
             </div> 
 
-        </form> 
+            <form autocomplete="off" class="search_form">
+            <div class="search_input_wraper">  
+                <input class="search_input" 
+                name="search" 
+                type="text" 
+                placeholder="Search products...">
+                <button type="submit">Submit</button>
+                <div class="autocomplete_products">
+                   <ul></ul>
+                </div>
+            </div>
+            </form>
+
+            <div class="min_max">
+                <div class="slider_range_wraper">
+                    <input type="range" min="0" max="1000" value="0" class="slider_range" step="5">
+                    <div class="results"></div>
+                </div>
+
+                <form class='form_min_max'>
+                    <input type="number" 
+                            class="min_input" 
+                            min="0"  step="50" 
+                            maxlength="3" 
+                            value="0" 
+                            name="min">
+        
+                    <input type="number" 
+                            class="max_input" 
+                            min="0" max="450" 
+                            step="50" 
+                            maxlength="3"
+                            value="450" 
+                            name="max">
+                    <input type="submit" class="submitMinMax">
+                </form>
+            </div>
+
+        </div> 
 
         <div class="product">
             <div class="product_circle">
